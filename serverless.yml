@@ -1,0 +1,12 @@
+service: html
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  lambdaHashingVersion: 20201221
+  stage: dev
+  region: us-east-2
+
+functions:
+  hello:
+    handler: src/handler.generateRandomNumber
